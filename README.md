@@ -26,7 +26,7 @@ LibTorch_Proj/
 ### 1. Clone và tải LibTorch (CPU version)
 
 ```bash
-git clone https://github.com/<your-name>/LibTorch_Proj.git
+git clone https://github.com/nanhbui/LibTorch_Proj.git
 cd LibTorch_Proj
 
 # Tải LibTorch CPU về và giải nén
@@ -77,10 +77,10 @@ gst-inspect-1.0 facedetect
 
 ```bash
 # Với mô hình compact
-gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! facedetect model-path=/home/lenovo/DA1/LibTorch_Proj/face_detector_compact.pt debug=true ! videoconvert ! autovideosink
+gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! facedetect model-path=/path/to/LibTorch_Proj/face_detector_compact.pt debug=true ! videoconvert ! autovideosink
 
 # Với mô hình mobile
-gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! facedetect model-path=/home/lenovo/DA1/LibTorch_Proj/face_detector_mobile.pt debug=true ! videoconvert ! autovideosink
+gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! facedetect model-path=/path/to/LibTorch_Proj/face_detector_mobile.pt debug=true ! videoconvert ! autovideosink
 ```
 
 > **Lưu ý:** Thay đổi `model-path` nếu bạn đang dùng đường dẫn khác.
