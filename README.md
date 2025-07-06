@@ -47,7 +47,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Cài đặt thư viện cần thiết
-pip install torch torchvision
+pip install torch torchvision opencv-python mediapipe numpy
 
 # Chạy script export mô hình
 python3 export_model.py
